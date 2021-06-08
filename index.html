@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CHITTI❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+p{
+  text-align: center;
+}
+body{
+  background-image: url('img.png');
+  background-repeat: no-repeat;
+  background-size: 100%125%;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 5px;
+}
+a:link,a:visited{
+  display: inline-block;
+  width: 220px;
+  height: 40px;
+  background-color: #6F90A9;
+  color: white;
+  padding: 14px 5px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+h1{
+  background-color: transparent;
+  margin: 0;
+    text-align: center;
+  color: #6F90A9;
+  display: block;
+}
+html{
+text-align: justify-all;}
+a,li,#g{color: turquoise;
+font-size: 40px;
+list-style: none;
+padding: 3px 1px;
+text-align: center;
+display: block;
+}
+ #demo{
+  height: 100px;
+  width: 900px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background: #f8f8ff;
+  color: #6F90A9;
+  font-size: 40px;
+  border:10px solid #2F4F68;
+}
+</style>
+</head>
+<body>
+  <h1>MY FIRST WEBPAGE TO YOU CHITTI ❤️</h1>
+  <br>
+    <div id="demo"></div>
+    <br>
+    <div id="g"><a href="gouthu.html">DIARY</a></div>
+    <div id="g"><a href="gallery.html">IMAGES</a></div>
+    <div id="g"><a href="video.html">BDAY VIDEO</a></div>
+    <br>
+
+<!--
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-43869667-0d8b-4ebc-9a9d-88b2cd2d6598"></div>
+-->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("June 29, 2021 00:00:00").getTime();
+
+var link="<a href='bday.html'>Its your Birthday !!! Click here</a>"
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerText = days + " Days  " + hours + " Hours  "
+  + minutes + " Minutes  " + seconds + " Seconds\n more for your birthday";
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+  document.getElementById("demo").innerHTML = link;
+  }
+  }, 1000);
+</script>
+</body>
+</html>
